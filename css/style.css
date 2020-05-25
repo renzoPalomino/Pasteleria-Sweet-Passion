@@ -1,4 +1,10 @@
 .carousel-inner img {
     width: 70%;
     height: 50%;
+    border-radius: 50px;
   }
+
+.modal-body img{
+	width: 100%;
+}
+
