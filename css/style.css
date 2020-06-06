@@ -1,10 +1,172 @@
+.bg-redCake#blur.active{
+	filter: blur(20px);
+}
+
+.bg-redCake{
+	/*background-color: rgb(255,128,128);*/
+	background-color: rgb(255,200,200);
+}
+
+.bg-imageCake{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	margin: 10%;
+	filter: blur(5px);
+}
+
+
+
+.container .card{
+	transition: 0.5s;
+}
+
+.container .card:before{
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.container .card:hover:before{
+	transform: scaleY(1.15);
+}
+
+.container:hover .card{
+	filter: blur(5px);
+	transform: scale(.7);
+}
+
+.container .card:hover{
+	filter: blur(0px);
+	transform: scale(1);
+}
+
 .carousel-inner img {
-    width: 70%;
-    height: 50%;
-    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    
+    /*border-radius: 50px;*/
   }
+
+.carousel-size{
+	height: 666px;
+	opacity: .3;
+	position: fixed;
+	z-index: -1;
+}
+
+.head-size{
+	height: 768px;
+}
 
 .modal-body img{
 	width: 100%;
 }
 
+.ocultar{
+	display: none;
+}
+
+.logo{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20%;
+	margin: 0 auto;
+	z-index: 1;
+	height: 300px;
+	width: 300px;
+}
+
+.text-title{
+	position: absolute;
+	color: white;
+	left: 0;
+	right: 0;
+	top: 55%;
+	/*margin: 0 auto;*/
+	z-index: 1;
+}
+
+.title-size{
+	font-size: 8rem; 
+	bottom: 20%;
+}
+
+.navbar-transparent{
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	right: 0;
+}
+
+.parallax{
+	background: fixed no-repeat 50% 50%;
+	background-size: cover;
+	background: blur(5px);
+
+}
+
+#sectionProducts{
+	background-image: url('../img/birthdayCake.svg');
+	background-color: rgba(255,200,200,1);
+}
+
+@media (max-width: 320px) {
+  .carousel-size{
+    height: 100px;
+	display: none;
+  }
+
+  .logo{
+  	height: 200px;
+  	width: 200px;
+  }
+
+  .title-size{
+  	font-size: 5rem;
+  }
+
+  .head-size{
+  	height: 670px;
+  }
+}
+
+@media (min-width: 375px) {
+  .carousel-size{
+    display: none;
+  }
+
+  .logo{
+  	height: 250px;
+  	width: 250px;
+  }
+
+  .title-size{
+  	font-size: 6rem;
+  }
+
+  .head-size{
+  	height: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-size{
+    height: 666px;
+    display: flex;
+  }
+
+  .head-size{
+  	height: 666px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-size{
+    height: 666px;
+  }
+}
